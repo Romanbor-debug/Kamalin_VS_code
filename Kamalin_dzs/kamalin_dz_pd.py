@@ -84,5 +84,5 @@ data = pd.read_csv("titanic.csv", index_col=0)
 #task 8
 
 print(data[(data.Sex == "female") & (data.Survived == 1) & (data.Pclass == 1)].count())
-print(data[(data.Age < 18) & (data.SibSp == 0)].count())
+print(data[(data.Age < 18) & (data.SibSp == 0)].count()) #Предположил что SibSp это bool знач показывающее наличиие родственников на корабле
 
